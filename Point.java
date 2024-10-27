@@ -14,13 +14,13 @@ public class Point {
 
     @Override
     public int hashCode() {
-    return (int)(3*x + 5*y);
+        return (int)(3*x + 5*y);
     }
 
     @Override
     public boolean equals(Object obj) {
         if (this == obj)
-        return true;
+            return true;
         if (obj == null)
             return false;
         if (getClass() != obj.getClass())

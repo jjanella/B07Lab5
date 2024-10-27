@@ -1,13 +1,13 @@
-package lab4;
+package lab5;
 public class Triangle {
 	Point A;
 	Point B;
 	Point C;
 	
 	public Triangle(Point A, Point B, Point C) {
-			this.A = A;
-			this.B = B;
-			this.C = C;
+		this.A = A;
+		this.B = B;
+		this.C = C;
 	}
 	
 	public double perimeter() {
@@ -18,7 +18,9 @@ public class Triangle {
 		double dAB = A.distance(B);
 		double dBC = B.distance(C);
 		double dCA = C.distance(A);
-		if(dAB==dBC && dBC==dCA) return true;
-		else return false;
+		if(dAB==dBC && dBC==dCA)
+			return true;
+		else
+			return false;
 	}
 }
